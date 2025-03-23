@@ -1,0 +1,4 @@
+The api key is an important information so be careful about diclosing it to others. 
+You can find the api for weather here on the weather api site :
+https://www.weatherapi.com/my/
+Or you can use other platforms accordingly.
