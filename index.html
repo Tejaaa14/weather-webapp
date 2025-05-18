@@ -3,18 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>Weather Application</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="header-container">
+        <img src="https://cdn-icons-png.flaticon.com/512/1146/1146869.png" alt="Weather Logo" class="logo">
+        <h1 class="app-title">Weather Application</h1>
+    </div>
     <div id="weather-container">
-        <h2>Weather App</h2>
-        <input type="text" id="city" placeholder="Enter city name">
-        <button onclick="getWeather()">Search</button>
-        <img alt="Weather icon" id="weather-icon">  <div id="temp-div"></div>
-        <div id="weather-info"></div>
+        <div class="app-header">
+            <div class="app-logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"></path>
+                </svg>
+            </div>
+            <h1 class="app-title">Discover your forecast</h1>
+        </div>
+        
+        <div class="search-container">
+            <input type="text" id="city" placeholder="Enter Your Location">
+            <button id="search-btn" onclick="getWeather()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#555" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="m21 21-4.3-4.3"></path>
+                </svg>
+            </button>
+        </div>
+        
+        <div class="weather-main">
+            <img alt="Weather icon" id="weather-icon">
+            <div id="temp-div"></div>
+            <div id="weather-condition"></div>
+            <div id="city-name"></div>
+        </div>
+        
+        <div class="weather-details">
+            <div class="weather-detail" id="humidity-detail">
+                <div class="detail-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#555" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 22c4.97 0 9-3.58 9-8s-4.03-8-9-8-9 3.58-9 8 4.03 8 9 8z"></path>
+                    </svg>
+                </div>
+                <div class="detail-label">Humidity</div>
+                <div class="detail-value" id="humidity-value">--</div>
+            </div>
+            
+            <div class="weather-detail" id="wind-detail">
+                <div class="detail-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#555" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M17.7 7.7a2.5 2.5 0 1 1 1.8 4.3H2"></path>
+                        <path d="M9.6 4.6A2 2 0 1 1 11 8H2"></path>
+                        <path d="M12.6 19.4A2 2 0 1 0 14 16H2"></path>
+                    </svg>
+                </div>
+                <div class="detail-label">Wind Speed</div>
+                <div class="detail-value" id="wind-value">--</div>
+            </div>
+        </div>
+        
         <div id="hourly-forecast"></div>
     </div>
-    <script src="./script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
