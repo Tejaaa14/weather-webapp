@@ -1,4 +1,4 @@
-# 🌦️ Weather Forecast App
+# 🌦️ Weather-WebApp
 
 **Weather Forecast App** is a responsive and interactive web application that provides current weather conditions and hourly forecasts for any city around the world.  
 It utilizes the [WeatherAPI](https://www.weatherapi.com/) and includes beautiful icons, clean animations, and a simple user experience.
