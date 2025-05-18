@@ -57,8 +57,11 @@ To run the project locally:
 ### 🔍 City Search and Current Weather  
 ![Current Weather](weather1.png)
 
-### 🕒 Hourly Forecast  
+### 🕒 Forecast 1
 ![Hourly Forecast](weather2.png)
+
+### 🕒 Forecast 2
+![Hourly Forecast](weather3.png)
 
 ---
 
