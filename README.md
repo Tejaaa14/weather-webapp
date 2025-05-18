@@ -74,4 +74,5 @@ weather-forecast-app/
 ├── script.js          # Weather logic and API handling
 ├── weather1.png
 ├── weather2.png    
+├── weather3.png    
 └── README.md
